@@ -56,3 +56,8 @@ u5 = User.create! name: 'Deborah Chin', email: 'd@hotmail.com', role: 'client'
 
 puts "created #{User.count} users"
 
+#------------Association
+
+#Create document>-<user many to many assocation
+
+

@@ -1,5 +1,5 @@
 class DropTableTypes < ActiveRecord::Migration[5.2]
   def change
-    drop_table :types
+    # drop_table :types
   end
 end

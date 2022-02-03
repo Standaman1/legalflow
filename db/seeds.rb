@@ -86,7 +86,7 @@ print "Creating Templates..."
 
 Template.destroy_all
 
-temp1 = Template.create! title: 'AVO', description: 'This Template is for an Apprehended Violence Orders. People who experience a form of domestic abuse or another can apply to the court to get an Apprehended Violence Order (AVO) from the court. It does not matter where the threat of future violence comes from, a court will impose the necessary restrictions be it an AVO (Apprehended Violence Order) or an ADVO (Apprehended Domestic Violence Order) depending on individual State or Territory’s legislation.', image: 'https://www.flaticon.com/free-icons/avocado', lawyer_signature: 'lawyersignature', user_signature: 'usersignature', user_name: 'user_name', lawyer_name: 'lawyer_name', type_id: type1.id
+temp1 = Template.create! title: 'AVO', description: 'This Template is for an Apprehended Violence Orders. People who experience a form of domestic abuse or another can apply to the court to get an Apprehended Violence Order (AVO) from the court. It does not matter where the threat of future violence comes from, a court will impose the necessary restrictions be it an AVO (Apprehended Violence Order) or an ADVO (Apprehended Domestic Violence Order) depending on individual State or Territory’s legislation.', image: 'app/assets/images/avocado.png', lawyer_signature: 'lawyersignature', user_signature: 'usersignature', user_name: 'user_name', lawyer_name: 'lawyer_name', type_id: type1.id
 
 temp2 = Template.create! title: 'Divorce', description: 'This Template is for Divorce Matters. Divorce is the formal legal ending of a marriage. It is separate and distinct from property settlement and parenting arrangements after the breakdown of a marriage. 
 

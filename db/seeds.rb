@@ -86,17 +86,26 @@ print "Creating Templates..."
 
 Template.destroy_all
 
-temp1 = Template.create! title: 'AVO', description: 'This Template is for Apprehended Violence Orders', image: 'https://www.flaticon.com/free-icons/avocado', lawyer_signature: 'lawyersignature', user_signature: 'usersignature', user_name: 'user_name', lawyer_name: 'lawyer_name', type_id: type1.id
+temp1 = Template.create! title: 'AVO', description: 'This Template is for an Apprehended Violence Orders. People who experience a form of domestic abuse or another can apply to the court to get an Apprehended Violence Order (AVO) from the court. It does not matter where the threat of future violence comes from, a court will impose the necessary restrictions be it an AVO (Apprehended Violence Order) or an ADVO (Apprehended Domestic Violence Order) depending on individual State or Territory’s legislation.', image: 'https://www.flaticon.com/free-icons/avocado', lawyer_signature: 'lawyersignature', user_signature: 'usersignature', user_name: 'user_name', lawyer_name: 'lawyer_name', type_id: type1.id
 
-temp2 = Template.create! title: 'Divorce', description: 'This Template is for Divorce Matters', image: 'https://fillmurray.com/100/100', lawyer_signature: 'lawyersignature', user_signature: 'usersignature', user_name: 'user_name', lawyer_name: 'lawyer_name', type_id: type1.id
+temp2 = Template.create! title: 'Divorce', description: 'This Template is for Divorce Matters. Divorce is the formal legal ending of a marriage. It is separate and distinct from property settlement and parenting arrangements after the breakdown of a marriage. 
 
-temp3 = Template.create! title: 'IP Registration', description: 'This Template is to register your IP with IP Australia', image: 'https://fillmurray.com/100/100', type_id: type2.id
+To be able to get divorced you need to show that your marriage has ‘irretrievably broken down’. This is demonstrated by being separated for 12 months or more, and there being no likelihood of the relationship resuming. The separation can be initiated by one person, or both.', image: 'https://fillmurray.com/100/100', lawyer_signature: 'lawyersignature', user_signature: 'usersignature', user_name: 'user_name', lawyer_name: 'lawyer_name', type_id: type1.id
 
-temp4 = Template.create! title: 'Patent Registration', description: 'This Template is for Patents', image: 'https://fillmurray.com/100/100', type_id: type2.id
+temp3 = Template.create! title: 'IP Registration', description: 'This Template is to register your IP with IP Australia. Trade marks act as a badge of origin for your services and allow you to stand out from your competition.
 
-temp5 = Template.create! title: 'Leases', description: 'This Template is for Leases', image: 'https://fillmurray.com/100/100', type_id: type3.id
+A successful trade mark creates emotion because emotion drives the buying decision. This is why experienced brand owners strive to generate a strong emotional attachment to brands. A great trade mark has the power to change a desire into a burning need. The consumer has no choice but to buy. 
 
-temp6 = Template.create! title: 'Employment', description: 'This Template is for Employment Contracts', image: 'https://fillmurray.com/100/100', type_id: type3.id
+Trade mark registration is the best form of brand protection. Trade marks add value to your business and are assets business buyers look towards when acquiring businesses. Trade mark registrations increase the resale value of businesses.
+
+Most importantly a trade mark registration allows you to easily enforce your rights against those that are trying to trade on the good reputaiton you have established in your brand. ', image: 'https://fillmurray.com/100/100', type_id: type2.id
+
+temp4 = Template.create! title: 'Patent Registration', description: 'This Template is for Patents. A patent is a right that is granted for any device, substance, method or process that is new, inventive and useful.
+A patent is a legally enforceable right to commercially exploit the invention for the life of the patent.', image: 'https://fillmurray.com/100/100', type_id: type2.id
+
+temp5 = Template.create! title: 'Leases', description: 'This Template is for Leases. A lease is a contract outlining the terms under which one party agrees to rent an asset—in this case, property—owned by another party. It guarantees the lessee, also known as the tenant, use of the property and guarantees the lessor—the property owner or landlord—regular payments for a specified period in exchange.', image: 'https://fillmurray.com/100/100', type_id: type3.id
+
+temp6 = Template.create! title: 'Employment', description: 'This Template is for Employment Contracts. An employment contract is an agreement between an employer and employee that sets out terms and conditions of employment. A contract can be in writing or verbal. All employees are covered by the National Employment Services(NES), regardless of whether they’ve signed a contract. A contract can’t make employees worse off than their minimum legal entitlements.', image: 'https://fillmurray.com/100/100', type_id: type3.id
 
 
 puts "created #{Template.count} templates"

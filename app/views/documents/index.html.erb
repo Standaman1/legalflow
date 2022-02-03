@@ -1,4 +1,4 @@
-<h2>Index of your documents</h2>
+<h3>Index of your documents</h3>
 
 
 <ul>
@@ -6,13 +6,18 @@
     <% @current_user.documents.each do |d| %>
 
         <li>
-            
+            <div class="title_button">
             <%= link_to d.title, document_path(d.id) %>
-            <%= link_to 'Edit', edit_document_path(d.id) %>
-            <%= link_to 'Delete', delete_document_path(d.id), data: {confirm: "Are you sure? Deleting means your data will not be saved"}, method: 'delete' %>
-
+            </div>
+            <div class="link_button">
+            <%= link_to "Edit #{d.title} Document", edit_document_path(d.id) %>
+            </div>
+            <div class="link_button">
+            <%= link_to "Delete #{d.title} Document", delete_document_path(d.id), data: {confirm: "Are you sure? Deleting means your data will not be saved"}, method: 'delete' %>
+            </div>
+            
         </li>
-
+        <br>
     <% end %>
 
 </ul>

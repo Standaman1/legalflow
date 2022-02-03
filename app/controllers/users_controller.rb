@@ -35,6 +35,7 @@ class UsersController < ApplicationController
       return true
     else
       return false
+    end
   end
 
   private 

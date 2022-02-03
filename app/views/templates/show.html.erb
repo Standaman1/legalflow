@@ -2,22 +2,22 @@
 
 
 
-    <h3>Templates for <%= @template.title %></h3>
+    <h3 class="title_show">Templates for <%= @template.title %></h3>
 
         <% if @template.image.present? %>
-            <%= image_tag @template.image, alt: @template.title, class: 'template_image' %>
+            <%= cl_image_tag @template.image, alt: @template.title, class: 'template_image' %>
         <% end %>
         <br><br>
 
         <%= link_to 'Select template to Fill', new_document_path(:id => params[:id])%>
 
         <p>
-            <h5>Purpose of template</h5>
+            <h5 class="title_show">Purpose of template</h5>
             <%= @template.description %>
         </p>
 
         <p>
-            <h5>Timeline or Requirements of template</h5>
+            <h5 class="title_show">Timeline or Requirements of template</h5>
         </p>
 
 

@@ -1,0 +1,9 @@
+<% if @stageone.errors.any? %>
+    <ul>
+        <%= @stageone.errors.full_messages.each do |e| %>
+        <li>
+            <%= e %>
+        </li>
+        <% end %>
+    </ul>
+<% end %>

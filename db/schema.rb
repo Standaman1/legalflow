@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_02_01_015419) do
+ActiveRecord::Schema.define(version: 2022_02_03_083325) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,6 +21,13 @@ ActiveRecord::Schema.define(version: 2022_02_01_015419) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "topic_id"
+    t.text "image"
+    t.text "lawyer_signature"
+    t.text "user_signature"
+    t.text "user_name"
+    t.text "lawyer_name"
+    t.integer "type_id"
+    t.integer "template_id"
   end
 
   create_table "documents_users", force: :cascade do |t|
@@ -28,11 +35,42 @@ ActiveRecord::Schema.define(version: 2022_02_01_015419) do
     t.integer "user_id"
   end
 
+  create_table "stageones", force: :cascade do |t|
+    t.text "title"
+    t.text "lawyer_signature"
+    t.text "user_signature"
+    t.text "user_name"
+    t.text "lawyer_name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.text "image"
+  end
+
+  create_table "templates", force: :cascade do |t|
+    t.text "title"
+    t.text "description"
+    t.integer "topic_id"
+    t.text "image"
+    t.text "lawyer_signature"
+    t.text "user_signature"
+    t.text "user_name"
+    t.text "lawyer_name"
+    t.integer "type_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "topics", force: :cascade do |t|
     t.text "area"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.text "description"
+  end
+
+  create_table "types", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|

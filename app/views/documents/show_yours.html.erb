@@ -1,0 +1,22 @@
+  <% if @current_user.documents.present? %>
+    <% @current_user.documents.each do |d| %>
+        <h3>Documents for <%= d.title %></h3>
+
+        <% if d.image.present? %>
+            <%= image_tag d.image, alt: d.title, class: 'document_image' %>
+        <% end %>
+        <br><br>
+
+        <%= link_to 'Select document to Fill', new_document_path%>
+
+        <p>
+            <h5>Purpose of Document</h5>
+            <%= d.description %>
+        </p>
+
+        <p>
+            <h5>Timeline or Requirements of Document</h5>
+        </p>
+        
+<% end %>
+<% end %>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyText
+  lawyer_signature: MyText
+  user_signature: MyText
+  user_name: MyText
+  lawyer_name: MyText
+
+two:
+  title: MyText
+  lawyer_signature: MyText
+  user_signature: MyText
+  user_name: MyText
+  lawyer_name: MyText

@@ -1,0 +1,29 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: hotpink;
+    background-color: aquamarine;
+    align-content: center;
+    text-align: center;
+}
+
+.toppart{
+    display: inline-block;
+
+}
+
+.template_index{
+    list-style-type: none;
+    display: table;
+    margin: 0 auto;
+
+}
+
+ul{
+    padding: 0;
+}
+
+#logo img{
+
+    width: 100px;
+    max-width: 100px;
+}

@@ -1,0 +1,15 @@
+<h2>Index of all templates</h2>
+
+
+<ul>
+
+    <% @templates.each do |d| %>
+
+        <li class="template_index">
+            <%= link_to d.title, template_path(d.id) %>
+
+        </li>
+
+    <% end %>
+
+</ul>

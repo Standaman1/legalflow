@@ -1,0 +1,21 @@
+
+
+
+
+    <h3>Documents for <%= @document.title %></h3>
+
+        <% if @document.image.present? %>
+            <%= image_tag @document.image, alt: @document.title, class: 'document_image' %>
+        <% end %>
+        <br><br>
+
+        <%= link_to 'Select document to Edit', edit_document_path%>
+
+        <p>
+            <h5>Purpose of Document</h5>
+            <%= @document.description %>
+        </p>
+
+
+
+   

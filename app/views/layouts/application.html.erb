@@ -1,15 +1,53 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ReallynewlegalflowApp</title>
+    <title>Legal Flow Space</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
+    <%= cloudinary_js_config %>
   </head>
 
   <body>
+
+    <header>
+      <div class="toppart">
+        <h1>Legal Workspace</h1>
+        <div id="logo">
+        <%= image_tag 'folder.png' %>
+        </div>
+      <nav>
+
+
+        <% if @current_user.present? %>
+            Welcome, <%= @current_user.name %>
+            |
+            <%= link_to 'Logout', login_path, data: {confirm: "Are you sure?"}, method: 'delete' %>
+            |
+            <%= link_to 'All Templates', templates_path%>
+            |
+            <%= link_to 'Your Documents', documents_path%>
+        <% else %>
+            <%= link_to 'Login', login_path %>
+            |
+            <%= link_to 'Signup', users_new_path %>
+
+
+          <% end %>
+       <link rel="icon" href="app/assets/images/folder.png">
+
+ 
+      </nav>
+      </div>
+      <hr>
+    </header>
     <%= yield %>
+
+    <footer>
+    <hr>
+    &copy; Daniel's NOT the winner Incorporated 2022
+    </footer>
   </body>
 </html>

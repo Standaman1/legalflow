@@ -1,0 +1,18 @@
+<h2>Index of your documents</h2>
+
+
+<ul>
+
+    <% @current_user.documents.each do |d| %>
+
+        <li>
+            
+            <%= link_to d.title, document_path(d.id) %>
+            <%= link_to 'Edit', edit_document_path(d.id) %>
+            <%= link_to 'Delete', delete_document_path(d.id), data: {confirm: "Are you sure? Deleting means your data will not be saved"}, method: 'delete' %>
+
+        </li>
+
+    <% end %>
+
+</ul>

@@ -30,13 +30,7 @@ class UsersController < ApplicationController
 
   end
 
-  def check_if_lawyer
-    if @user.role == "lawyer"
-      return true
-    else
-      return false
-    end
-  end
+
 
   private 
   def user_params

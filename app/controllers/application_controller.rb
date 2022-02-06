@@ -21,5 +21,12 @@ class ApplicationController < ActionController::Base
 
     end
 
+    def check_if_lawyer
+        if @user.role == "lawyer"
+          return true
+        else
+          return false
+        end
+      end
 end
 end

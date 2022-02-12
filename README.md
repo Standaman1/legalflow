@@ -1,24 +1,20 @@
-# README
+#README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Legal Flow
 
-Things you may want to cover:
+This will ideally allow both clients and/or lawyers to fill legal documents dependent on the topic and requirements for such document.
 
-* Ruby version
+Tech Used:
+Ruby on Rails, HTML, CSS. Bootstrap, PostgreSQL
 
-* System dependencies
+Features:
+CRUD for clients and lawyers
 
-* Configuration
+Wishlist:
+Working Images
+Finished CRUD for clients and lawyers
 
-* Database creation
 
-* Database initialization
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
-
-* ...

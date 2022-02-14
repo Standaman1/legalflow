@@ -8,7 +8,7 @@ class DocumentsController < ApplicationController
 
   def create
     
-    @document = Document.create document_params
+    @document = Document.new document_params
     @document.user_ids = @current_user.id
     @document.template_id = params[:id]
     @document.save
@@ -62,7 +62,7 @@ end
   private 
 
   def document_params
-    params.require(:document).permit(:title, :description, :image, :lawyer_signature, :lawyer_name, :user_name, :user_signature, :user_id, :document_id)
+    params.require(:document).permit(:title, :description, :image, :lawyer_signature, :lawyer_name, :user_name, :user_signature, :document_id)
   end 
 
 end

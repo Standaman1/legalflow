@@ -9,6 +9,13 @@
     </div>
     <% end %>
     <% end %>
+
+
+    <div class="mb-3">
+    <%= form.label :name%>
+    <%= form.text_field :name, class: 'form-control', placeholder: "John Doe" %>
+    </div>
+
     <div class="mb-3">
     <%= form.label :email%>
     <%= form.text_field :email, class: 'form-control', placeholder: "example@email.com" %>
@@ -23,8 +30,14 @@
     <div class="mb-3">
     <%= form.label :password_confirmation%>
     <%= form.password_field :password_confirmation, class: 'form-control',  placeholder: "chicken" %>
+    </div>
+
     <div>
+    <%= form.label :role%>
+    <%= form.select :role, ["Lawyer", "Client"], class: "form-select", include_blank: "Select Role" %>
+    </div>
     <br>
+
     <%= form.submit "Sign Up", class: "btn btn-primary" %>
 <% end %>
 

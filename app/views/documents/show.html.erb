@@ -5,7 +5,7 @@
     <h3>Documents for <%= @document.title %></h3>
 
         <% if @document.image.present? %>
-            <%= cl_image_tag @document.image, alt: @document.title, class: 'document_image' %>
+            <%= cl_image_tag "@document.image", alt: @document.title, class: 'document_image' %>
         <% end %>
         <br><br>
 

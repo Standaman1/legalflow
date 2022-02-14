@@ -28,7 +28,7 @@ print "Creating Documents..."
 
 Document.destroy_all
 
-docu1 = Document.create! title: 'AVO', description: 'This Document is for Apprehended Violence Orders', image: 'https://www.flaticon.com/free-icons/avocado', lawyer_signature: 'lawyersignature', user_signature: 'usersignature', user_name: 'user_name', lawyer_name: 'lawyer_name', type_id: type1.id
+docu1 = Document.create! title: 'AVO', description: 'This Document is for Apprehended Violence Orders', image: '../app/assets/images/avocado.png', lawyer_signature: 'lawyersignature', user_signature: 'usersignature', user_name: 'user_name', lawyer_name: 'lawyer_name', type_id: type1.id #lawyer_id & client_id
 
 docu2 = Document.create! title: 'Divorce', description: 'This Document is for Divorce Matters', image: 'https://fillmurray.com/200/200', lawyer_signature: 'lawyersignature', user_signature: 'usersignature', user_name: 'user_name', lawyer_name: 'lawyer_name', type_id: type1.id
 
@@ -58,9 +58,9 @@ print "Creating Users..."
 
 User.destroy_all
 
-u1 = User.create! name: 'Stanley Chin', email: 's@hotmail.com', role: 'lawyer', password: 'chicken'
+u1 = User.create! name: 'Stanley Chin', email: 's@hotmail.com', role: 'lawyer', password: 'chicken', #lawyer_documents
 u2 = User.create! name: 'Liesel Pirece', email: 'l@hotmail.com', role: 'lawyer', password: 'chicken'
-u3 = User.create! name: 'Amy Chin', email: 'a@hotmail.com', role: 'client', password: 'chicken'
+u3 = User.create! name: 'Amy Chin', email: 'a@hotmail.com', role: 'client', password: 'chicken', #client_documents
 u4 = User.create! name: 'Robert Chin', email: 'r@hotmail.com', role: 'client', password: 'chicken'
 u5 = User.create! name: 'Deborah Chin', email: 'd@hotmail.com', role: 'client', password: 'chicken'
 

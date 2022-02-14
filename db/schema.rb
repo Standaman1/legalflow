@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_02_03_083325) do
+ActiveRecord::Schema.define(version: 2022_02_11_235858) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 2022_02_03_083325) do
     t.text "lawyer_name"
     t.integer "type_id"
     t.integer "template_id"
+    #lawyer_id and client_id
   end
 
   create_table "documents_users", force: :cascade do |t|
@@ -76,7 +77,7 @@ ActiveRecord::Schema.define(version: 2022_02_03_083325) do
   create_table "users", force: :cascade do |t|
     t.string "name"
     t.string "email"
-    t.text "role"
+    t.integer "role"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.text "password_digest"
